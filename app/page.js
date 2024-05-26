@@ -11,8 +11,8 @@ import Title from '@/components/Title';
 import dynamic from 'next/dynamic';
 
 export default function Home() {
-  const NEXT_PUBLIC_WEATHER_KEY='7c1329666ea58903d4da743deb4cee97';
-  const NEXT_PUBLIC_ACCESS_TOKEN='pk.6b4c3c2e2db512c2776b0ae9b30f67e6';
+  // const NEXT_PUBLIC_WEATHER_KEY='7c1329666ea58903d4da743deb4cee97';
+  // const NEXT_PUBLIC_ACCESS_TOKEN='pk.6b4c3c2e2db512c2776b0ae9b30f67e6';
   const Map = dynamic(() => import('@/components/Map'), { ssr: false });
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState({});
